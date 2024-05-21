@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('imagens/fundo.jpg') no-repeat center center fixed; /* Caminho para a imagem de fundo */
+    background-size: cover;
+    position: relative;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:nth-last-child(2),
+nav ul li:last-child {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li:nth-last-child(2) a .icon,
+nav ul li:last-child a .icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+
+main {
+    padding: 20px;
+    text-align: center; /* Alinhar o texto justificado */
+    max-width: 1200px; /* Define a largura máxima do conteúdo principal */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+    border-radius: 10px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o texto */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+}
+
+a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile-pic {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento inferior */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.project .short-description {
+    font-size: 1em;
+    color: #555;
+}
+
+.project .full-description {
+    display: none;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.project button.toggle-description {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.project button.toggle-description:hover {
+    background-color: #555;
+}

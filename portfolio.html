@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://www.instagram.com/jadearruda_" target="_blank">
+                    <img src="icons/instagram.svg" alt="Instagram" class="icon">
+                </a></li>
+                <li><a href="https://www.youtube.com/@jadearruda_" target="_blank">
+                    <img src="icons/youtube.svg" alt="YouTube" class="icon">
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Portfólio</h1>
+        <div class="portfolio-gallery">
+            <div class="project">
+                <a href="https://www.twitch.tv/jadearruda_"><img src="imagens/projeto1.jpg"></a>
+                <h2>Twitch</h2>
+                <p class="short-description">Acesse o meu canal na Twitch.</p>
+                <div class="full-description">
+                    <p>Acompanhe minhas transmissões, participe do chat e faça parte da nossa comunidade gamer. Clique para saber mais sobre minhas lives e como se conectar. </p>
+                </div>
+                <button class="toggle-description">Ver mais</button>
+            </div>
+            <div class="project">
+                <a href="https://www.youtube.com/@jadearruda_"><img src="imagens/projeto2.jpg"></a>
+                <h2>YouTube</h2>
+                <p class="short-description">Acesse o meu canal no YouTube.</p>
+                <div class="full-description">
+                    <p>Assista a recortes de lives, vídeos engraçados, tutoriais, reviews e muito mais. Clique para acessar e saber mais sobre o canal.</p>
+                </div>
+                <button class="toggle-description">Ver mais</button>
+            </div>
+            <div class="project">
+                <a href="https://github.com/jadhylima"><img src="imagens/projeto3.jpg"></a>
+                <h2>GitHub</h2>
+                <p class="short-description">Confira o meu GitHub.</p>
+                <div class="full-description">
+                    <p>Confira meus projetos de programação no GitHub e acompanhe meus desenvolvimentos. Clique no botão para saber mais e acessar meus códigos.</p>
+                </div>
+                <button class="toggle-description">Ver mais</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.querySelectorAll('.toggle-description').forEach(button => {
+            button.addEventListener('click', () => {
+                const fullDescription = button.previousElementSibling;
+                if (fullDescription.style.display === 'block') {
+                    fullDescription.style.display = 'none';
+                    button.textContent = 'Ver mais';
+                } else {
+                    fullDescription.style.display = 'block';
+                    button.textContent = 'Ver menos';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
